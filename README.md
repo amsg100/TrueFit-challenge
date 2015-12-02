@@ -1,2 +1,31 @@
-# TrueFit-challenge
-Contains answers to the challenge questions fromTrueFit.
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	for (int i = 1; i <= 100; i++)
+	{
+		if (((i % 3) == 0) && ((i % 7) == 0))
+		{
+			cout << i << ": Fire and Ice" << endl;
+		}
+
+		else if ((i % 3) == 0)
+		{
+			cout << i << ": Fire" << endl;
+		}
+
+		else if ((i % 7) == 0)
+		{
+			cout << i << ": Ice" << endl;
+		}
+
+		else 
+		{
+			cout << i << ": " << i << endl;
+		}
+	}
+
+	return 0;
+}
